@@ -1,12 +1,14 @@
 :root {
-    --dark: #705d3ca8;
-    --light: #aaa082ab;
+    --btn:#3f331eb9;
+    --beige: #bbac7d;
+   
+    --light:rgb(250, 247, 238);
+    --shadow:rgba(0, 0, 0, 0.452);
   }
 
 *{
     margin: 0;
     padding: 0;
-    /* font-family: "Noto Kufi Arabic", sans-serif; */
     font-family: 'Amiri', serif;
     font-weight: 600;
 }
@@ -42,7 +44,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px 35px 0 35px;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: var(--shadow);
 }
 
 #logo{
@@ -50,9 +52,8 @@ nav{
 }
 
 button{
-    color: rgb(250, 247, 238);
-    background-color: #3f331eb9;
-    width: 130px;
+    color: var(--light);
+    background-color: var(--btn);
     height: 34px;
     cursor: pointer;
     border: none;
@@ -60,12 +61,12 @@ button{
 }
 
 button:hover{
-    background-color: var(--light);
+    background-color: var(--beige);
 }
 
 #home-btn{
-    color: #bbac7d;
-    font-size: 1.3rem;
+    color: var(--beige);
+    font-size: 1.1rem;
     display: none;
 }
 
@@ -75,17 +76,17 @@ button:hover{
 }
 .nav-links a{
     text-decoration: none;
-    color: #bbac7d;
+    color: var(--beige);
 }
 .nav-links a:hover{
-    color: rgb(250, 247, 238);
+    color: var(--light);
 }
 #home-btn:hover{
-    color: rgb(250, 247, 238);
+    color: var();
 }
 
 #name{
-    width: 75%;
+    width: 80%;
     max-width: 700px; 
 } 
 
@@ -101,17 +102,22 @@ h1{
     align-items: center;
 }
 
-.welcome{
+.welcome, .mashaaer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 13vh;
+    height: 90vh;
 }
 
-.btn-container{
-    padding: 0 15px;
+.welcome{
+    gap: 10vw;
 }
+
+.mashaaer{
+    gap: 25vw;
+}
+
 .btns{
     width: 25vw;
     min-width: 100px;
@@ -122,13 +128,13 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 40px 10px 0 10px;
+    margin: 0 10px;
     padding: 50px 0;
 }
 
 .btns button{
     font-size: 1.1rem;
-    width: 15vw;
+    width: 20vw;
     height: 10vh;
 }
 
@@ -138,13 +144,12 @@ h1{
 
 .btns i{
     font-size: 1.2rem;
-    color: rgb(250, 247, 238);
+    color: var(--light);
     padding: 0 7px;
 }
 
 footer{
-    display: none;
-    /* background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.452);
     width: 100%;
     margin-top: auto;
     color: #bbac7d;
@@ -153,11 +158,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px; */
-}
-
-.contact span{
-    padding: 0 15px;
+    padding-top: 5px;
+    padding-bottom: 16px;
+    display:none;
 }
 
 .contact i{
@@ -178,8 +181,10 @@ footer{
 
 /* makkah */
 .place-title{
-    font-size: 5rem;
-    padding: 0 15vw;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
 }
 .place{
     display: flex;
@@ -211,7 +216,8 @@ footer{
     height: 40px;
     margin-top: -6px;
     top:-10px;
-    background-color: var(--light);
+    background-color: rgba(235, 232, 222, 0.718);
+    color: #514229;
 }
 
 .tabs{
@@ -234,6 +240,14 @@ footer{
     border-radius: 8px;
     font-size: 1.2rem;
     margin-bottom: 15px;
+}
+.inner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 @media (max-width: 700px){
@@ -263,7 +277,20 @@ footer{
     .tabs{
         border-radius: 0 0 10px 10px;
     }
-    .welcome{
+    .welcome, .mashaaer{
         flex-direction: column;
+        height: 75vh;
+    }
+    .nav-links{
+        display: none;
+    }
+    footer{
+        display: flex;
+    }
+    #home-btn{
+        display: inline;
+    }
+    .place-title{
+        font-size: 2.7rem;
     }
 }
