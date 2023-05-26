@@ -1,7 +1,6 @@
 :root {
     --btn:#3f331eb9;
     --beige: #bbac7d;
-   
     --light:rgb(250, 247, 238);
     --shadow:rgba(0, 0, 0, 0.452);
   }
@@ -17,7 +16,7 @@
     position: relative; 
     height: 100vh;
     width: 100%;
-    background-image: url(/img/background.jpg);
+    background-image: url(/rakayahajj/img/background.jpg);
     background-size: cover;
     display: flex;
     background-position: center;
