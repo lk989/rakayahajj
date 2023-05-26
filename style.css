@@ -1,0 +1,269 @@
+:root {
+    --dark: #705d3ca8;
+    --light: #aaa082ab;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Noto Kufi Arabic", sans-serif; */
+    font-family: 'Amiri', serif;
+    font-weight: 600;
+}
+
+.background {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+  }
+
+.background:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.811);
+}
+
+.content {
+    position: relative;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px 0 35px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+#logo{
+    height: 50px;
+}
+
+button{
+    color: rgb(250, 247, 238);
+    background-color: #3f331eb9;
+    width: 130px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: var(--light);
+}
+
+#home-btn{
+    color: #bbac7d;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    gap: 35px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #bbac7d;
+}
+.nav-links a:hover{
+    color: rgb(250, 247, 238);
+}
+#home-btn:hover{
+    color: rgb(250, 247, 238);
+}
+
+#name{
+    width: 75%;
+    max-width: 700px; 
+} 
+
+h1{
+    color: #bbac7d;
+    font-size: 1.7rem;
+    display: inline;
+}
+
+.inner-welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13vh;
+}
+
+.btn-container{
+    padding: 0 15px;
+}
+.btns{
+    width: 25vw;
+    min-width: 100px;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 10px 0 10px;
+    padding: 50px 0;
+}
+
+.btns button{
+    font-size: 1.1rem;
+    width: 15vw;
+    height: 10vh;
+}
+
+.place-btn{
+    font-size: 1.4rem;
+}
+
+.btns i{
+    font-size: 1.2rem;
+    color: rgb(250, 247, 238);
+    padding: 0 7px;
+}
+
+footer{
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    margin-top: auto;
+    color: #bbac7d;
+    z-index: 5;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px; */
+}
+
+.contact span{
+    padding: 0 15px;
+}
+
+.contact i{
+    color: #bbac7d;
+    padding: 0 5px;
+}
+
+.contact i:hover{
+    color: rgb(250, 247, 238);
+}
+
+
+
+
+
+
+
+
+/* makkah */
+.place-title{
+    font-size: 5rem;
+    padding: 0 15vw;
+}
+.place{
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+    font-size: 1.9rem;
+    padding-bottom: 2vh;
+}
+
+.link-container{
+    padding: 22px;
+}
+
+.links{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.links button{ 
+    border-radius: 10px 10px 0 0;
+    transition: .3s;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.links button:hover,
+.links .active{ 
+    height: 40px;
+    margin-top: -6px;
+    top:-10px;
+    background-color: var(--light);
+}
+
+.tabs{
+    background-color: rgba(255, 252, 246, 0.349);
+    height: 40vh;
+    border-radius: 10px 0 10px 10px;
+    padding: 20px 15px 0 15px;
+    
+}
+
+.tabs a{
+    text-decoration: none;
+}
+
+.link-container .link{
+    color: #514229;
+    text-align: end;
+    background-color: rgba(235, 232, 222, 0.718);
+    padding: 2vh;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px){
+    .btns{
+        padding: 30px 40px;
+        align-items: center;
+        gap: 30px;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    .inner-welcome{
+        order: -1;
+    }
+    .btns button{
+        width: 140px;
+        height: 60px;
+        transition: .5s;
+    }
+    nav{
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    #logo{
+        height: 40px;
+    }
+    .tabs{
+        border-radius: 0 0 10px 10px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+}
