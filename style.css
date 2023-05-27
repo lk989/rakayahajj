@@ -42,7 +42,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 35px 0 35px;
+    padding: 5px 35px;
     background-color: var(--shadow);
 }
 
@@ -296,5 +296,8 @@ footer{
     .place-title,
     .place-mashaaer{
         font-size: 2.7rem;
+    }
+    .background{
+        height: 90vh;
     }
 }
