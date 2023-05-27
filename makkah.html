@@ -20,20 +20,18 @@
                 <a href="index.html" id="home-btn"><i class='fa fa-house'></i></a>
                 <div class="nav-links">
                     <div class="contact">
-                        <a href="#"><i class='fa fa-whatsapp'></i></a>
-                        <a href="#"><i class='fa fa-twitter'></i></a>
-                        <a href="#"><i class='fa fa-phone'></i></a>
+                        <a href="#"><img src="/img/whatsapp.png"></a>
+                        <a href="tel:0542187024"><img src="/img/phone2.png"></a>
                     </div>
                     <span class="nav-contact">للتواصل </span>
-                    <!-- <a href="index.html"> الرئيسية</a> -->
                 </div>
                 <a href="index.html"><img src="/img/full.png" id="logo" alt="logo"></a>
             </nav>
             <h1 class="place-title">مكة</h1>
             <div class="link-container">
                 <div class="links">
-                    <button onclick="openTap(this, 'rating')">التقييم</button>
-                    <button onclick="openTap(this, 'requirements')" class="active">الاشتراطات</button>
+                    <button onclick="openTap(this, 'rating')">التقييم<i class="fa-solid fa-list-check"></i></button>
+                    <button onclick="openTap(this, 'requirements')" class="active">الاشتراطات<i class="fa-regular fa-file-lines"></i></button>
                 </div>
 
                 <div id="rating" class="tabs" style="display:none">
@@ -52,15 +50,6 @@
                 </div>
             </div>
         </div>
-        
-        <footer>
-            <p>تواصل معنا</p>
-            <div class="contact">
-                <a href="#"><i class='fa fa-whatsapp'></i></a>
-                <a href="#"><i class='fa fa-phone'></i></a>
-                <a href="#"><i class='fa fa-twitter'></i></a>
-            </div>
-        </footer>
 
         <script>
             function openTap(e, tabName) {
@@ -73,7 +62,6 @@
             toggleActive(e, tabName);
             }
 
-            
             function toggleActive(e, tabName){
                 e.classList.add('active');
                 if(tabName == 'requirements'){

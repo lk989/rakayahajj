@@ -14,6 +14,11 @@
     font-weight: 600;
 }
 
+
+
+
+
+
 .background {
     position: relative; 
     min-height: 100vh;
@@ -147,7 +152,7 @@ h1{
     font-size: 1rem;
 }
 
-.btns i{
+i{
     font-size: 1.2rem;
     color: var(--light);
     padding: 0 7px;
@@ -167,15 +172,21 @@ footer{
     padding-bottom: 16px;
     display: none;
 }
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.contact i{
-    color: #bbac7d;
-    padding: 0 5px;
+.contact img{
+    width: 15px;
+
 }
 
 .contact i:hover{
     color: rgb(250, 247, 238);
 }
+
 
 
 /* makkah */
@@ -195,6 +206,7 @@ footer{
 
 .link-container{
     padding: 22px 22px 0 22px;
+    margin: 0 4vw;
 }
 
 .links{
@@ -224,7 +236,6 @@ footer{
     height: 40vh;
     border-radius: 10px 0 10px 10px;
     padding: 20px 15px 0 15px;
-    
 }
 
 .tabs a{
@@ -261,6 +272,9 @@ footer{
     }
     .inner-welcome{
         order: -1;
+    }
+    .link-container{
+        margin: 0;
     }
     .btns button{
         width: 160px;
