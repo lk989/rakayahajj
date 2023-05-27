@@ -295,4 +295,7 @@ footer{
     .place-btn{
         font-size: 0.8rem;
     }
+    .nav-links{
+        flex-direction: column;
+    }
 }
