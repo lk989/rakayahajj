@@ -163,7 +163,7 @@ footer{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 16px;
-    display: none;
+    
 }
 
 .contact i{
@@ -181,7 +181,7 @@ footer{
     font-size: 4rem;
     display: flex;
     justify-content: center;
-    padding-top: 2vh;
+    padding-top: 4vh;
 }
 .place{
     display: flex;
@@ -192,7 +192,7 @@ footer{
 }
 
 .link-container{
-    padding: 10px 25px;
+    padding: 22px 22px 0 22px;
 }
 
 .links{
@@ -272,7 +272,7 @@ footer{
     }
     .welcome, .mashaaer{
         flex-direction: column;
-        height: 75vh;
+        height: 70vh;
     }
     nav{
         padding-top: 10px;
