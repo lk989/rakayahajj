@@ -176,12 +176,6 @@ footer{
 }
 
 
-
-
-
-
-
-
 /* makkah */
 .place-title{
     font-size: 4rem;
@@ -279,6 +273,10 @@ footer{
     .welcome, .mashaaer{
         flex-direction: column;
         height: 75vh;
+    }
+    nav{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .nav-links{
         display: none;
