@@ -276,7 +276,7 @@ footer{
         margin: 0;
     }
     .btns button{
-        width: 160px;
+        width: 180px;
         height: 70px;
         transition: .5s;
     }
@@ -310,5 +310,7 @@ footer{
     .nav-contact{
         display: none;
     }
-    
+    .contact img{
+        width: 20px;
+    }
 }
