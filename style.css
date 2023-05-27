@@ -286,6 +286,7 @@ footer{
     .place-title
     {
         font-size: 2.9rem;
+        padding-top: 10px;
         padding-bottom: 20px;
     }
     .place-mashaaer{
@@ -297,5 +298,8 @@ footer{
     }
     .nav-contact{
         display: none;
+    }
+    .contact{
+        font-size: 1.2rem;
     }
 }
