@@ -86,7 +86,8 @@ button:hover{
 
 #name{
     width: 80%;
-    max-width: 700px; 
+    max-width: 700px;
+    min-width: 100px; 
 } 
 
 h1{
@@ -254,15 +255,15 @@ footer{
         gap: 30px;
     }
     h1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding-bottom: 10px;
     }
     .inner-welcome{
         order: -1;
     }
     .btns button{
-        width: 140px;
-        height: 60px;
+        width: 160px;
+        height: 70px;
         transition: .5s;
     }
     #logo{
@@ -276,8 +277,8 @@ footer{
         height: 70vh;
     }
     nav{
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .place-title
     {
