@@ -282,7 +282,7 @@ footer{
     }
     .welcome, .mashaaer{
         flex-direction: column;
-        height: 75vh;
+        height: 65vh;
     }
     .nav-links{
         display: none;
