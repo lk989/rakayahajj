@@ -101,6 +101,9 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+.inner-welcome h1{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
 
 .welcome, .mashaaer{
     display: flex;
