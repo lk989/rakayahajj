@@ -99,6 +99,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
 }
 
 .welcome, .mashaaer{
@@ -114,11 +115,12 @@ h1{
 }
 
 .mashaaer{
-    gap: 25vw;
+    gap: 10vw;
 }
 
 .place-mashaaer{
     font-size: 5rem;
+    order: -1;
 }
 
 .btns{
