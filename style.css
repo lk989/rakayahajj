@@ -130,7 +130,7 @@ h1{
 
 .btns{
     width: 25vw;
-    min-width: 100px;
+    min-width: 200px;
     background-color: rgba(0, 0, 0, 0.452);
     border-radius: 10px;
     display: flex;
