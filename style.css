@@ -14,7 +14,7 @@
 
 .background {
     position: relative; 
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(/img/background.jpg);
     background-size: cover;
@@ -106,7 +106,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 75vh;
 }
 
 .welcome{
@@ -163,7 +163,7 @@ footer{
     align-items: center;
     padding-top: 5px;
     padding-bottom: 16px;
-    display:none;
+    display: none;
 }
 
 .contact i{
@@ -181,18 +181,18 @@ footer{
     font-size: 4rem;
     display: flex;
     justify-content: center;
-    padding-top: 4vh;
+    padding-top: 2vh;
 }
 .place{
     display: flex;
     justify-content: center;
-    padding-top: 8vh;
+    padding-top: 6vh;
     font-size: 1.9rem;
     padding-bottom: 2vh;
 }
 
 .link-container{
-    padding: 22px;
+    padding: 10px 25px;
 }
 
 .links{
@@ -278,17 +278,18 @@ footer{
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .nav-links{
+    .nav-contact{
         display: none;
     }
     footer{
         display: flex;
     }
-    #home-btn{
-        display: inline;
-    }
-    .place-title,
-    .place-mashaaer{
+    .place-title
+    {
         font-size: 2.7rem;
     }
+    .place-mashaaer{
+        font-size: 3rem;
+    }
+
 }
