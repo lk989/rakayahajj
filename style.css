@@ -75,16 +75,12 @@ button:hover{
     display: flex;
     gap: 10px;
 }
-.nav-links a{
+.nav-contact{
     font-size: 0.9rem;
-    text-decoration: none;
     color: var(--beige);
 }
 .nav-links a:hover{
     color: var(--light);
-}
-#home-btn:hover{
-    color: var();
 }
 
 #name{
@@ -281,12 +277,12 @@ footer{
     }
     nav{
         padding-top: 15px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
     .place-title
     {
         font-size: 2.9rem;
-        padding-top: 10px;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
     .place-mashaaer{
@@ -300,6 +296,6 @@ footer{
         display: none;
     }
     .contact{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
