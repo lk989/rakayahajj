@@ -254,7 +254,8 @@ footer{
         gap: 30px;
     }
     h1{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        padding-bottom: 10px;
     }
     .inner-welcome{
         order: -1;
@@ -278,18 +279,14 @@ footer{
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .nav-contact{
-        display: none;
-    }
-    footer{
-        display: flex;
-    }
     .place-title
     {
-        font-size: 2.7rem;
+        font-size: 2.9rem;
+        padding-bottom: 20px;
     }
     .place-mashaaer{
-        font-size: 3rem;
+        padding-top: 2vh;
+        font-size: 3.4rem;
     }
 
 }
