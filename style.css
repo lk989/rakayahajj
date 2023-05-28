@@ -292,6 +292,7 @@ footer{
     .place-mashaaer{
         padding-top: 3vh;
         font-size: 2.5rem;
+        order: -1;
     }
     .place-btn{
         font-size: 0.8rem;
