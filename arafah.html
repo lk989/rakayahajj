@@ -11,7 +11,8 @@
     <script src="https://kit.fontawesome.com/3a7ef9e254.js" crossorigin="anonymous"></script>
     
     <script src="index.js"></script>
-    <title>Rakaya | Makkah</title>
+    <title>ركايا | عرفة</title>
+    <link rel="icon" type="image/x-icon" href="/img/r.png">
 </head>
 <body>
     <section class="background">
@@ -19,19 +20,16 @@
             <nav>
                 <a href="index.html" id="home-btn"><i class='fa fa-house'></i></a>
                 <div class="nav-links">
-                    <div class="contact">
-                        <a href="https://wa.me/966542187024"><img src="/img/whatsapp.png"></a>
-                        <a href="tel:0542187024"><img src="/img/phone2.png"></a>
-                    </div>
-                    <span class="nav-contact">للتواصل </span>
+                    <a href="https://wa.me/966542187024"><img src="/img/whatsapp.png"></a>
+                    <a href="tel:0542187024"><img src="/img/phone2.png"></a>
                 </div>
-                <a href="index.html"><img src="/img/full.png" id="logo" alt="logo"></a>
+                <a href="index.html"><img src="/img/rakaya.png" id="logo" alt="logo"></a>
             </nav>
             <h1 class="place-title">عرفة</h1>
             <div class="link-container">
                 <div class="links">
-                    <button onclick="openTap(this, 'rating')">التقييم</button>
-                    <button onclick="openTap(this, 'requirements')" class="active">الاشتراطات</button>
+                    <button onclick="openTap(this, 'rating')">التقييم<i class="fa-solid fa-list-check" id="rate"></i></button>
+                    <button onclick="openTap(this, 'requirements')" class="active">الاشتراطات<i class="fa-regular fa-file-lines" id="req" style="color: #3f331eb9;"></i></button>
                 </div>
 
                 <div id="rating" class="tabs" style="display:none">
@@ -60,16 +58,20 @@
             }
             document.getElementById(tabName).style.display = "block";  
             toggleActive(e, tabName);
+            
             }
 
-            
             function toggleActive(e, tabName){
                 e.classList.add('active');
                 if(tabName == 'requirements'){
                     e.previousElementSibling.classList.remove('active');
+                    document.getElementById('req').style.color = "#3f331eb9";
+                    document.getElementById('rate').style.color = "rgb(250, 247, 238)";
                 }
                 else{
                     e.nextElementSibling.classList.remove('active');
+                    document.getElementById('rate').style.color = "#3f331eb9";
+                    document.getElementById('req').style.color = "rgb(250, 247, 238)";
                 }
             }
         </script>

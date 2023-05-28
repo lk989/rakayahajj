@@ -44,12 +44,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 35px;
+    padding: 15px 35px 5px 35px;
     background-color: var(--shadow);
 }
 
 #logo{
-    height: 50px;
+    height: 40px;
 }
 
 button{
@@ -73,11 +73,7 @@ button:hover{
 
 .nav-links{
     display: flex;
-    gap: 15px;
-}
-.nav-contact{
-    font-size: 0.9rem;
-    color: var(--beige);
+    gap: 20px;
 }
 
 #name{
@@ -112,12 +108,14 @@ h1{
 }
 
 .mashaaer{
-    gap: 10vw;
+    gap: 20vw;
 }
 
 .place-mashaaer{
-    font-size: 5rem;
-    order: -1;
+    font-size: 3.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btns{
@@ -144,6 +142,18 @@ h1{
     font-size: 1rem;
 }
 
+a{
+    text-decoration: none;
+}
+
+.arafa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 i{
     font-size: 1.2rem;
     color: var(--light);
@@ -164,20 +174,15 @@ footer{
     padding-bottom: 16px;
     display: none;
 }
-.contact{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.contact img{
-    width: 15px;
+.nav-links img{
+    width: 18px;
 }
 
 
 /* makkah */
 .place-title{
-    font-size: 4rem;
+    font-size: 3.2rem;
     display: flex;
     justify-content: center;
     padding-top: 4vh;
@@ -269,6 +274,7 @@ footer{
     }
     #logo{
         height: 40px;
+        padding-top: 10px;
     }
     .tabs{
         border-radius: 0 0 10px 10px;
@@ -276,10 +282,6 @@ footer{
     .welcome, .mashaaer{
         flex-direction: column;
         height: 70vh;
-    }
-    nav{
-        padding-top: 15px;
-        padding-bottom: 10px;
     }
     .place-title
     {
@@ -289,7 +291,7 @@ footer{
     }
     .place-mashaaer{
         padding-top: 3vh;
-        font-size: 3.7rem;
+        font-size: 2.5rem;
     }
     .place-btn{
         font-size: 0.8rem;
